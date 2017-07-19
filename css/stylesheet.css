@@ -44,3 +44,12 @@ h1 {
     background-size: 60em 60em; 
   }
 }
+@media only screen and (max-device-width: 480px) {
+    #gallery {
+    position: absolute;
+    right: 2em;
+  }
+  #home {
+    background-size: 60em 60em; 
+  }
+}

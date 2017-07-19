@@ -1,7 +1,7 @@
 $(document).ready(function() {
-
-	$('.fotorama').fotorama({
-		data: [
+	var $gallery = $("#gallery").fotorama(),
+		fotorama = $gallery.data('fotorama');
+		fotorama.load ([
 			{img: 'images/jj3.jpg'},
 			{img: 'images/jj4.jpg'},
 			{img: 'images/jj5.jpg'},
@@ -31,7 +31,6 @@ $(document).ready(function() {
 			{img: 'images/jj30.jpg'},
 			{img: 'images/jj31.jpg'},
 			{img: 'images/jj32.jpg'}
-		]
-	});
+		]);
 
 });
