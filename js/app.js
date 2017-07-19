@@ -1,8 +1,3 @@
-// $(document).ready(function() {
-// 	var $gallery = $("#gallery").fotorama(),
-// 		fotorama = $gallery.data('fotorama');
-// 		fotorama.load ([
-
 $(document).ready(function() {
  	var $gallery = 
  	$("#gallery").fotorama({
