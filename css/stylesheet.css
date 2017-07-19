@@ -1,0 +1,46 @@
+body {
+  font-family: 'Gruppo', cursive;
+}
+#home {
+  background-image: url("../images/bgimg3.jpg");
+  width: 100%;
+  height: 700px;
+  background-size: cover;
+}
+#gallery {
+    position: absolute;
+    right: 22em;
+    width: 35em;
+    top: 27%;
+    border: 5px groove grey;
+}
+#jjPhoto {
+  border-radius: 50%;
+  border: 2px inset grey;
+  height: 15em;
+}
+#container {
+  text-align: center;
+  padding-top: 2em;
+  font-family: 'Amatic SC', cursive;
+}
+.synop {
+  font-size: 2em;
+}
+h1 {
+  padding-top: 1em;
+}
+#about, #contact {
+  width: 100%;
+  height: 700px;
+}
+@media screen and (max-width: 699px) and (min-width: 520px) {
+  #gallery {
+    position: absolute;
+    width: 90%;
+    right: 2em;
+  }
+  body {
+    background-size: 60em 60em; 
+  }
+}
