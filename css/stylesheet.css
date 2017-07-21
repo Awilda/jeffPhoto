@@ -2,16 +2,15 @@ body {
   font-family: 'Gruppo', cursive;
 }
 #home {
-  background-image: url("../images/bgimg3.jpg");
-  width: 100%;
-  height: 700px;
+  background-image: url("../images/bgimg3.jpg");   
 }
 #gallery {
-    position: absolute;
-    right: 22em;
-    width: 35em;
-    top: 27%;
-    border: 5px groove grey;
+  border: 5px groove grey;
+  position: absolute;
+  text-align: center;
+  width: 35em;
+  top: 12em;
+  right: 17em;
 }
 #jjPhoto {
   border-radius: 50%;
@@ -34,7 +33,7 @@ h1 {
   padding-right: 5em;
   padding-left: 5em;
 }
-#about, #contact {
+#home, #about, #contact {
   width: 100%;
   height: 700px;
 }
@@ -42,7 +41,7 @@ h1 {
   margin-top: 2em;
 }
 footer {
-  position: absolute;
+  position: relative;
   right: 0;
   bottom: 0;
   left: 0;
@@ -60,11 +59,89 @@ footer {
   }
 }
 @media only screen and (max-device-width: 480px) {
-    #gallery {
+  #gallery {
     position: absolute;
-    right: 2em;
+    /*right: 2em;*/
   }
   #home {
     background-size: 60em 60em; 
   }
 }
+/* iPads (landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) {
+  #gallery {
+    position: absolute;
+    right: 10em;
+  }
+  #home {
+    background-size: 150em; 
+  }
+}
+
+/* iPads (portrait) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) {
+  #gallery {
+    position: absolute;
+    right: 5em;
+  }
+  #home {
+    background-size: 115em; 
+  }
+}
+/* Large screens ----------- */
+@media only screen 
+and (min-width : 1824px) {
+  #gallery {
+    position: absolute;
+    width: 90%;
+    right: 10em;
+  }
+}
+/* iPhone 4 - 5s ----------- */
+@media
+only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) {
+  #gallery {
+    position: absolute;
+    width: 80%;
+    right: 2em;
+  }
+  #home {
+    background-size: 187em; 
+    bottom: 20px;
+  }
+}
+/* iPhone 6 ----------- */
+@media
+only screen and (max-device-width: 667px) 
+only screen and (-webkit-device-pixel-ratio: 2) {
+  #gallery {
+    position: absolute;
+    width: 80%;
+    right: 2em;
+  }
+  #home {
+    background-size: 30px; 
+  }
+}
+/* iPhone 6+ ----------- */
+@media
+only screen and (min-device-width : 414px) 
+only screen and (-webkit-device-pixel-ratio: 3) {
+    #gallery {
+    position: absolute;
+    width: 80%;
+    right: 2em;
+  }
+  #home {
+    background-size: 30px; 
+  }
+}
+
+

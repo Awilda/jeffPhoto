@@ -33,5 +33,4 @@ $(document).ready(function() {
  			{img: 'images/jj32.jpg'}
  		]
  	});
- 
  });
